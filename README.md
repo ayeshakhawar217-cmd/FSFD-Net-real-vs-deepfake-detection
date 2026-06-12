@@ -51,11 +51,6 @@ Final Merged Datset subset Used for training and validation to learn spatial, fr
 https://www.kaggle.com/datasets/sachchitkunichetty/rvf10k
 RVF10K subset is used for zero-shot evaluation without fine-tuning to measure generalization across unseen manipulation techniques.
 
-### Data Organization
-dataset/
- ├── real/
- ├── fake/
-
 ---
 
 ## Training Setup
@@ -82,7 +77,7 @@ dataset/
 
 Grad-CAM++ is used to visualize regions that contribute most to the model’s prediction. It highlights manipulated facial regions, texture inconsistencies, and blending boundaries, providing interpretability to the classification decision.
 
-Figure: <img width="557" height="341" alt="Gradcam" src="https://github.com/user-attachments/assets/aafa56e7-6cd4-4404-a365-4c239f81ce6d" />
+ <img width="557" height="341" alt="Gradcam" src="https://github.com/user-attachments/assets/aafa56e7-6cd4-4404-a365-4c239f81ce6d" />
 
 
 ---
@@ -91,7 +86,7 @@ Figure: <img width="557" height="341" alt="Gradcam" src="https://github.com/user
 
 This visualization illustrates how FSFD-Net processes input images across RGB, frequency, and edge domains, demonstrating complementary feature extraction across representations.
 
-Figure: <img width="542" height="339" alt="FSFD-MultiBranch" src="https://github.com/user-attachments/assets/33781bce-c8e9-4385-979e-d3fc783de181" />
+ <img width="542" height="339" alt="FSFD-MultiBranch" src="https://github.com/user-attachments/assets/33781bce-c8e9-4385-979e-d3fc783de181" />
 
 
 
@@ -101,8 +96,7 @@ Figure: <img width="542" height="339" alt="FSFD-MultiBranch" src="https://github
 
 This figure compares frequency-domain distributions of real and fake images, highlighting spectral artifacts introduced by manipulation.
 
-Figure: <img width="641" height="254" alt="fftSpec" src="https://github.com/user-attachments/assets/b85a0504-bc87-42ec-b606-f8d6e8039f1f" />
-
+ <img width="641" height="254" alt="fftSpec" src="https://github.com/user-attachments/assets/b85a0504-bc87-42ec-b606-f8d6e8039f1f" />
 
 
 
