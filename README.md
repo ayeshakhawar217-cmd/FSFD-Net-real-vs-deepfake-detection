@@ -39,16 +39,22 @@ Features from all branches are concatenated and passed through a fully connected
 
 ---
 
-## Dataset Structure
+## Datasets and Experimental Setup
 
+To ensure fair evaluation and generalization, FSFD-Net is tested under both in-domain and cross-domain settings.
+
+### In-Domain Dataset
+https://www.kaggle.com/datasets/abdelrahmantarekm/final-merged-dataset
+Final Merged Datset subset Used for training and validation to learn spatial, frequency, and edge-based representations.
+
+### Cross-Domain Dataset
+https://www.kaggle.com/datasets/sachchitkunichetty/rvf10k
+RVF10K subset is used for zero-shot evaluation without fine-tuning to measure generalization across unseen manipulation techniques.
+
+### Data Organization
 dataset/
  ├── real/
  ├── fake/
-
-Preprocessing:
-- Resize images to 224×224
-- Convert to tensor
-- Normalize pixel values
 
 ---
 
@@ -95,7 +101,8 @@ Figure: <img width="542" height="339" alt="FSFD-MultiBranch" src="https://github
 
 This figure compares frequency-domain distributions of real and fake images, highlighting spectral artifacts introduced by manipulation.
 
-Figure: <img width="542" height="339" alt="FSFD-MultiBranch" src="https://github.com/user-attachments/assets/ceab181c-a627-49bd-9650-6cfbbaa39e57" />
+Figure: <img width="641" height="254" alt="fftSpec" src="https://github.com/user-attachments/assets/b85a0504-bc87-42ec-b606-f8d6e8039f1f" />
+
 
 
 
