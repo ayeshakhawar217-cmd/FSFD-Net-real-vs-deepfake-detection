@@ -129,4 +129,4 @@ FSFD-Net maintains competitive performance on unseen RVF10K samples, indicating 
 
 ## License
 
-This project is intended for research and educational purposes only.
+FSFD-Net is released under the Apache License 2.0. The code is provided for research, educational, and development purposes. See the [LICENSE](LICENSE) file for details.
